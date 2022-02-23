@@ -1,0 +1,157 @@
+div.mnWrap {
+  height: 200px;
+  padding: 90px 0;
+}
+
+div.media section {
+  margin-top: 80px;
+}
+
+div.media .s1 {
+  background: none;
+}
+
+div.media .s1 article header {
+  width: 340px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div.media .s1 article header h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: inherit;
+}
+
+div.media .s1 article header h3 {
+  line-height: 40px;
+}
+
+div.media .s1 article .image {
+  margin-top: 20px;
+}
+
+div.media .s2 {
+  background: none;
+}
+
+div.media .s2 article header h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: inherit;
+  width: 80px;
+  padding: 0;
+}
+
+div.media .s2 article header p {
+  color: #293443;
+  margin-top: 0;
+}
+
+div.media .s2 article header p br {
+  display: none;
+}
+
+div.media .s2 article iframe {
+  width: 100%;
+  height: 260px;
+  margin-top: 20px;
+}
+
+div.media .s3 {
+  background: none;
+  padding-top: 0;
+  margin-top: 80px;
+}
+
+div.media .s3 article {
+  width: calc((100% / 2) - 20px);
+}
+
+div.media .s3 article .texts {
+  margin-top: 20px;
+}
+
+div.media .s3 article .texts h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: inherit;
+}
+
+div.media .s3 article .texts h6 {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+}
+
+div.media .s3 article .texts p {
+  margin-top: 10px;
+}
+
+div.media .s4 {
+  background: none;
+}
+
+div.media .s4 article {
+  margin-top: 20px;
+}
+
+div.media .s4 article:first-of-type {
+  background: none;
+}
+
+div.media .s4 article:first-of-type .image {
+  margin-top: 20px;
+}
+
+div.media .s4 article:nth-of-type(2) {
+  background: none;
+}
+
+div.media .s4 article:last-of-type {
+  padding-bottom: 0;
+}
+
+div.media .s4 article h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: inherit;
+}
+
+div.media .s4 article .image {
+  width: 100%;
+  height: 400px;
+}
+
+div.media .s5 {
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+div.media .s5 article {
+  display: none;
+}
+
+div.media .s5 footer {
+  margin: 0;
+  margin-top: 40px;
+}
+
+div.media .s5 footer h5 {
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+  height: 20px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+div.media .s5 footer h5 span i {
+  margin-right: 5px;
+}

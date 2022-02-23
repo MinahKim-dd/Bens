@@ -1,0 +1,363 @@
+div.mnWrap {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+div.mnWrap .imgGroup {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+div.mnWrap .imgGroup .image {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+  padding: 80px 0 680px;
+  position: absolute;
+}
+
+div.mnWrap .imgGroup .image header {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.mnWrap .imgGroup .image .texts {
+  display: inline-block;
+  padding: 40px 10px;
+}
+
+div.mnWrap .imgGroup .image h2 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  color: #fff;
+}
+
+div.mnWrap .imgGroup .image h3 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+div.mnWrap .imgGroup .i1 {
+  background-image: url("../img/index/main_1.jpg");
+}
+
+div.mnWrap .imgGroup .i2 {
+  background-image: url("../img/index/main_2.jpg");
+}
+
+div.mnWrap .imgGroup .i3 {
+  background-image: url("../img/index/main_3.jpg");
+}
+
+div.mnWrap::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+div.content {
+  padding-top: 0;
+  margin-top: 80px;
+}
+
+div.bestItem {
+  background: linear-gradient(10deg, transparent 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 100% 720px;
+  background-repeat: no-repeat;
+}
+
+div.bestItem header {
+  text-align: right;
+}
+
+div.bestItem section article {
+  width: calc(100% / 3 - 20px);
+}
+
+div.bestItem section article:nth-of-type(2) {
+  margin-top: 60px;
+}
+
+div.bestItem section article:last-of-type {
+  margin-top: 120px;
+}
+
+div.bestItem .i1 {
+  background-image: url("../img/index/best_item_1.jpg");
+}
+
+div.bestItem .i2 {
+  background-image: url("../img/index/best_item_2.jpg");
+}
+
+div.bestItem .i3 {
+  background-image: url("../img/index/best_item_3.jpg");
+}
+
+div.bestItem .i4 {
+  background-image: url("../img/index/best_item_4.jpg");
+}
+
+div.bestItem .i5 {
+  background-image: url("../img/index/best_item_5.jpg");
+}
+
+div.bestItem .i6 {
+  background-image: url("../img/index/best_item_6.jpg");
+}
+
+div.bensPeople {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #054d43), color-stop(50.1%, #054d43));
+  background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+}
+
+div.bensPeople header {
+  text-align: center;
+}
+
+div.bensPeople section .artGroup {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+div.bensPeople section article {
+  width: calc(100% / 4 - 20px);
+  position: relative;
+}
+
+div.bensPeople section article:nth-of-type(even) {
+  margin-top: 80px;
+}
+
+div.bensPeople .i1 {
+  background-image: url("../img/index/bens_people_1.jpg");
+}
+
+div.bensPeople .i2 {
+  background-image: url("../img/index/bens_people_2.jpg");
+}
+
+div.bensPeople .i3 {
+  background-image: url("../img/index/bens_people_3.jpg");
+}
+
+div.bensPeople .i4 {
+  background-image: url("../img/index/bens_people_4.jpg");
+}
+
+div.bensPeople .i5 {
+  background-image: url("../img/index/bens_people_5.jpg");
+}
+
+div.bensPeople .i6 {
+  background-image: url("../img/index/bens_people_6.jpg");
+}
+
+div.mediaLounge {
+  background: linear-gradient(-10deg, transparent 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 100% 720px;
+  background-repeat: no-repeat;
+}
+
+div.mediaLounge section article {
+  width: calc(100% / 3 - 20px);
+}
+
+div.mediaLounge section article:first-of-type {
+  margin-top: 120px;
+}
+
+div.mediaLounge section article:nth-of-type(2) {
+  margin-top: 60px;
+}
+
+div.mediaLounge .i1 {
+  background-image: url("../img/index/media_lounge_1.jpg");
+}
+
+div.mediaLounge .i2 {
+  background-image: url("../img/index/media_lounge_2.jpg");
+}
+
+div.mediaLounge .i3 {
+  background-image: url("../img/index/media_lounge_3.jpg");
+}
+
+div.mediaLounge .i4 {
+  background-image: url("../img/index/media_lounge_4.jpg");
+}
+
+div.mediaLounge .i5 {
+  background-image: url("../img/index/media_lounge_5.jpg");
+}
+
+div.mediaLounge .i6 {
+  background-image: url("../img/index/media_lounge_6.jpg");
+}
+
+div.brandStory {
+  background: linear-gradient(25deg, transparent 50%, #054d43 50.1%), linear-gradient(-25deg, transparent 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+div.brandStory header {
+  text-align: center;
+}
+
+div.brandStory header p {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+
+div.brandStory section article {
+  width: 55%;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+div.brandStory .i1 {
+  background-image: url("../img/index/brand_story_1.jpg");
+}
+
+div.brandStory .i2 {
+  background-image: url("../img/index/brand_story_2.jpg");
+}
+
+div.showRoom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #054d43), color-stop(50.1%, #054d43));
+  background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+  background-position: left 0;
+  background-size: calc(100vw - 400px) 500px;
+  background-repeat: no-repeat;
+}
+
+div.showRoom header {
+  text-align: center;
+}
+
+div.showRoom section article {
+  width: calc(50% - 40px);
+  position: relative;
+}
+
+div.showRoom .i1 {
+  background-image: url("../img/index/show_rooom_1.jpg");
+}
+
+div.showRoom .i2 {
+  background-image: url("../img/index/show_rooom_2.jpg");
+}
+
+@media (max-width: 420px) {
+  div.mnWrap {
+    height: 300px;
+  }
+  div.mnWrap .imgGroup {
+    height: 300px;
+  }
+  div.mnWrap .imgGroup .image {
+    padding: 10px 0;
+  }
+  div.mnWrap .imgGroup .image .texts {
+    padding: 10px;
+  }
+  div.mnWrap .imgGroup .image h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+  }
+  div.mnWrap .imgGroup .image h3 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  div.content {
+    padding-top: 0;
+    margin-top: 40px;
+  }
+  div.bestItem header,
+  div.bensPeople header,
+  div.brandStory header,
+  div.showRoom header {
+    text-align: left !important;
+  }
+  div.bestItem {
+    background: none;
+  }
+  div.bestItem section .artGroup {
+    width: 300%;
+  }
+  div.bestItem section article:nth-of-type(2) {
+    margin-top: 0;
+  }
+  div.bestItem section article:last-of-type {
+    margin-top: 0;
+  }
+  div.bensPeople {
+    background: none;
+  }
+  div.bensPeople section .artGroup {
+    width: 400%;
+  }
+  div.bensPeople section article:nth-of-type(even) {
+    margin-top: 0;
+  }
+  div.mediaLounge {
+    background: none;
+  }
+  div.mediaLounge section .artGroup {
+    width: 300%;
+  }
+  div.mediaLounge section article:first-of-type {
+    margin-top: 0;
+  }
+  div.mediaLounge section article:nth-of-type(2) {
+    margin-top: 0;
+  }
+  div.brandStory {
+    background: none;
+  }
+  div.brandStory header p {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 20px;
+    color: inherit;
+  }
+  div.brandStory section article {
+    width: 100%;
+  }
+  div.showRoom {
+    background: none;
+  }
+  div.showRoom section .artGroup {
+    width: 200%;
+  }
+  div.showRoom section article {
+    width: calc(50% - 20px);
+  }
+}

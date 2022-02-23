@@ -1,0 +1,178 @@
+div.loginBox {
+  padding: 80px 0;
+}
+
+div.loginBox header {
+  text-align: center;
+}
+
+div.loginBox header h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: inherit;
+  text-transform: capitalize;
+}
+
+div.loginBox header h4 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  color: inherit;
+  margin-top: 20px;
+}
+
+div.loginBox section {
+  margin-top: 20px;
+}
+
+div.loginBox section form {
+  width: 410px;
+  margin: 0 auto;
+}
+
+div.loginBox section form input {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  color: inherit;
+  display: block;
+  width: 410px;
+  height: 50px;
+  border: 1px solid #054d43;
+  border-radius: 5px;
+}
+
+div.loginBox section form input[type=text] {
+  padding: 0 10px;
+}
+
+div.loginBox section form input[type=text]:focus {
+  background-color: #f5f3f0;
+}
+
+div.loginBox section form input[type=password] {
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+div.loginBox section form input[type=password]:focus {
+  background-color: #f5f3f0;
+}
+
+div.loginBox section form input[type=submit] {
+  border: 1px solid #054d43;
+  background-color: #054d43;
+  color: #fff;
+  margin-top: 30px;
+}
+
+div.loginBox section .f2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+div.loginBox section .f2 div {
+  width: calc(50% - 20px);
+}
+
+div.loginBox section .f2 div h5 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  color: #777;
+}
+
+div.loginBox section .f2 .find {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.loginBox section .f2 .sign h5 {
+  text-align: right;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+div.loginBox section .f3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+div.loginBox section .f3 button {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #06be34;
+}
+
+div.loginBox section .f3 button:last-of-type {
+  background-color: #fee502;
+  color: #000;
+}
+
+@media (max-width: 420px) {
+  div.loginBox {
+    padding: 40px 0;
+  }
+  div.loginBox header h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: inherit;
+  }
+  div.loginBox header h4 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    color: inherit;
+    margin-top: 0;
+  }
+  div.loginBox section form {
+    width: 300px;
+  }
+  div.loginBox section form input {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    color: inherit;
+    width: 300px;
+    height: 40px;
+  }
+  div.loginBox section .f2 div {
+    width: 50%;
+  }
+  div.loginBox section .f2 div h5 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    color: #777;
+  }
+  div.loginBox section .f3 button {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+  }
+}

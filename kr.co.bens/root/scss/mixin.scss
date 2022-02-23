@@ -1,0 +1,19 @@
+@mixin ctWidth {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@mixin ctFonts($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+@mixin dpFlex ($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+@mixin img {
+    background-position: center;
+    background-size: cover;
+}

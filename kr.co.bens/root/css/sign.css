@@ -1,0 +1,347 @@
+div.signUp {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+div.signUp header {
+  text-align: center;
+}
+
+div.signUp header h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: inherit;
+  text-transform: capitalize;
+}
+
+div.signUp header h4 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  color: inherit;
+  margin-top: 20px;
+}
+
+div.signUp section {
+  margin-top: 20px;
+}
+
+div.signUp section form {
+  border-top: 1px solid #054d43;
+  padding: 20px 0;
+}
+
+div.signUp section form h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: inherit;
+  text-align: center;
+}
+
+div.signUp section form h5 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  color: inherit;
+}
+
+div.signUp section form h6 {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 40px;
+  color: inherit;
+}
+
+div.signUp section form input {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+div.signUp section form input:focus {
+  background-color: #f5f3f0;
+}
+
+div.signUp section .f1 .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.signUp section .f1 .password div {
+  width: calc(50% - 10px);
+}
+
+div.signUp section .f2 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+div.signUp section .f2 .wrap .personal {
+  width: calc(50% - 10px);
+}
+
+div.signUp section .f2 .wrap .personal h5:last-of-type {
+  margin-top: 30px;
+}
+
+div.signUp section .f2 .wrap .address {
+  width: calc(50% - 10px);
+}
+
+div.signUp section .f2 .wrap .address .ad1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.signUp section .f2 .wrap .address .ad1 input[type=text] {
+  width: calc(70% - 5px);
+}
+
+div.signUp section .f2 .wrap .address .ad1 input[type=submit] {
+  width: calc(30% - 5px);
+  background-color: #f5f3f0;
+}
+
+div.signUp section .f2 .wrap .address .ad2 input {
+  margin-top: 10px;
+}
+
+div.signUp section .f3 .agree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.signUp section .f3 .agree .txtBox {
+  width: calc(50% - 10px);
+}
+
+div.signUp section .f3 .agree .txtBox .t1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.signUp section .f3 .agree .txtBox .t1 h5 {
+  width: 80%;
+  font-size: 14px;
+}
+
+div.signUp section .f3 .agree .txtBox .t1 h5:last-of-type {
+  font-weight: 500;
+  width: 20%;
+  text-align: right;
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+div.signUp section .f3 .agree .txtBox .txtHide {
+  display: none;
+  height: 200px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+div.signUp section .f3 .agree .txtBox .txtHide h6 {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+  margin-top: 20px;
+}
+
+div.signUp section .f3 .agree .txtBox .txtHide h6:first-of-type {
+  margin-top: 0;
+}
+
+div.signUp section .f3 .agree .txtBox .t2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+div.signUp section .f3 .agree .txtBox .t2 h5 {
+  width: 80%;
+  font-size: 14px;
+}
+
+div.signUp section .f3 .agree .txtBox .t2 fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.signUp section .f3 .agree .txtBox .t2 fieldset input {
+  width: 20px;
+  height: 20px;
+}
+
+div.signUp section .f3 .agree .txtBox .t2 fieldset label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  color: inherit;
+}
+
+div.signUp section .f4 input {
+  width: calc(50% - 20px);
+  border: 1px solid #054d43;
+  background-color: #054d43;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 420px) {
+  div.signUp {
+    max-width: 400px;
+    padding: 40px 0;
+  }
+  div.signUp header h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: inherit;
+  }
+  div.signUp header h4 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    color: inherit;
+    margin-top: 0;
+  }
+  div.signUp section {
+    margin-top: 10px;
+  }
+  div.signUp section form {
+    padding: 10px 0 20px;
+  }
+  div.signUp section form h4 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+    color: inherit;
+  }
+  div.signUp section form h5 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    color: inherit;
+  }
+  div.signUp section form h6 {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    color: inherit;
+  }
+  div.signUp section form input {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    color: inherit;
+    height: 40px;
+  }
+  div.signUp section .f1 .password {
+    display: block;
+  }
+  div.signUp section .f1 .password div {
+    width: 100%;
+  }
+  div.signUp section .f2 .wrap {
+    display: block;
+  }
+  div.signUp section .f2 .wrap .personal {
+    width: 100%;
+  }
+  div.signUp section .f2 .wrap .personal h5:last-of-type {
+    margin-top: 0;
+  }
+  div.signUp section .f2 .wrap .address {
+    width: 100%;
+  }
+  div.signUp section .f3 .agree {
+    display: block;
+  }
+  div.signUp section .f3 .agree .txtBox {
+    width: 100%;
+  }
+  div.signUp section .f3 .agree .txtBox .t1 h5 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    color: inherit;
+  }
+  div.signUp section .f3 .agree .txtBox .txtHide h6 {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    color: inherit;
+  }
+  div.signUp section .f3 .agree .txtBox .t2 {
+    margin-top: 0;
+  }
+  div.signUp section .f3 .agree .txtBox .t2 h5 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    color: inherit;
+  }
+  div.signUp section .f3 .agree .txtBox .t2 fieldset input {
+    width: 12px;
+    height: 12px;
+  }
+  div.signUp section .f3 .agree .txtBox .t2 fieldset label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: inherit;
+  }
+  div.signUp section .f4 input {
+    margin-top: 10px;
+  }
+}

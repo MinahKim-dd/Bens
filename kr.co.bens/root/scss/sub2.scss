@@ -1,0 +1,153 @@
+@import 'mixin.scss';
+
+div.mnWrap {
+    background-image: url('../img/sub2_Idea/main.jpg');
+}
+
+div.house {
+    @for $n from 1 to 2 {
+        .i#{$n} {
+            background-image: url('../img/sub2_Idea/house_#{$n}.jpg');
+        }
+    }
+}
+
+div.idea{
+    section{
+        .artGroup{
+            width: calc(100% / 3 * 4);
+        }
+        article {
+            width: calc(100% / 4 - 20px);
+            .text{
+                background-color: #fff;
+            }
+        }
+    }
+    @for $n from 1 to 10 {
+        .i#{$n} {
+            background-image: url('../img/sub2_Idea/idea_#{$n}.jpg');
+        }
+    }
+}
+
+div.space {
+    header {
+        .artView{
+            margin-top: 20px;
+        }
+        ul {
+            @include dpFlex(flex-start);
+            margin: 0;
+
+            li {
+                text-align: center;
+                line-height: 40px;
+                background-color: #f5f3f0;
+                border: 1px solid #f5f3f0;
+                border-radius: 20px;
+                padding: 0 20px;
+                margin: 0;
+                margin-right: 10px;
+
+                &.clicked {
+                    color: #fff;
+                    background-color: #054d43;
+                }
+
+                &:not(.clicked):hover {
+                    border: 1px solid #054d43;
+                }
+            }
+        }
+    }
+
+    section {
+        .artGroup {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            grid-gap: 20px;
+            margin: 0 10px;
+
+            article {
+                grid-column: span 2;
+                grid-row: span 4;
+
+                &:nth-of-type(2) {
+                    grid-row: span 3;
+                }
+
+                .image {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+
+        h6 {
+            display: inline-block;
+            line-height: 40px;
+            color: #fff;
+            background-color: #054d43;
+            border: 0;
+            border-radius: 20px;
+            padding: 0 20px;
+        }
+    }
+
+    @for $n from 1 to 10 {
+        .i#{$n} {
+            background-image: url('../img/sub2_Idea/space_#{$n}.jpg');
+        }
+    }
+}
+
+div.banner {
+    .banner {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width:420px) {
+    div.idea{
+        section{
+            article {
+                width: 100%;
+            }
+        }
+    }
+    div.space{
+        header{
+            ul{
+                margin-top: 0;
+
+                li{
+                    // line-height: 30px;
+                    padding: 0;
+                }
+            }
+        }
+        section {
+            .artGroup {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                grid-gap: 10px;
+                grid-auto-flow: row dense;
+                margin: 0;
+            }
+        }    
+        footer{
+            margin-top: 20px;
+        }
+    }
+    div.banner {
+        padding: 0;
+        .banner {
+            width: 100%;
+        }
+    }
+}

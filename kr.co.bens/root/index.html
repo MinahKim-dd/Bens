@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/mySlider.js"></script>
+</head>
+
+<body>
+    <div class="topMenu">
+        <menu>
+            <h1><a href="index.html">BENS</a></h1>
+            <nav>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="sign.html">회원가입</a></li>
+            </nav>
+            <div class="nav">
+                <h2><a href="board.html">고객지원</a></h2>
+                <button><i class="fas fa-search"></i></button>
+                <button><i class="fas fa-times"></i></button>
+            </div>
+        </menu>
+        <div class="popUp search">
+            <form>
+                <input type="text">
+                <input type="submit" value="검색">
+            </form>
+            <div class="texts">
+                <h5>추천 검색어</h5>
+                <h6>베스트</h6>
+                <h6>소파</h6>
+                <h6>매트리스</h6>
+            </div>
+        </div>
+    </div>
+    <div class="hdrWrap">
+        <header>
+            <ul>
+                <li><a href="sub1_product.html">제품</a></li>
+                <li><a href="sub2_bensPeople.html">인테리어 아이디어</a></li>
+                <li><a href="sub3_media.html">정보</a></li>
+                <li><a href="sub4_whyBens.html">브랜드 이야기</a></li>
+            </ul>
+            <div class="bars">
+                <button><i class="fas fa-bars"></i></button>
+            </div>
+        </header>
+    </div>
+    <div class="navWrap">
+        <nav>
+            <ul>
+                <li><a href="sub1_product.html">가구</a></li>
+                <li>매트리스</li>
+                <li>조명</li>
+                <li>주방</li>
+                <li>홈오피스</li>
+                <li>어린이</li>
+            </ul>
+            <ul>
+                <li><a href="sub2_bensPeople.html">침실</a></li>
+                <li>거실</li>
+                <li>주방</li>
+                <li>욕실</li>
+                <li>현관</li>
+                <li>야외공간</li>
+            </ul>
+            <ul>
+                <li>매장안내</li>
+                <li>BENS Live</li>
+                <li><a href="sub3_media.html">미디어</a></li>
+            </ul>
+            <ul>
+                <li><a href="sub4_whyBens.html">ABOUT BENS</a></li>
+                <li>BENS AWARD</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mnWrap mnIndex">
+        <div class="imgGroup">
+            <div class="image i1">
+                <header>
+                    <div class="texts">
+                        <h2>Herman</h2>
+                        <h3>
+                            이탈리아의 헤리티지, 고혹적인 프리미엄 나파 가죽,
+                            <br>헤르만 소파
+                        </h3>
+                    </div>
+                </header>
+            </div>
+            <div class="image i2">
+                <header>
+                    <div class="texts">
+                        <h2>Descento</h2>
+                        <h3>
+                            세련된 무드를 완성하는 스페인산 세라믹,
+                            <br>데센토 테이블
+                        </h3>
+                    </div>
+                </header>
+            </div>
+            <div class="image i3">
+                <header>
+                    <div class="texts">
+                        <h2>Velottie</h2>
+                        <h3>
+                            매혹적인 호텔 무드, 자유 변형 헤드레스트
+                            <br>벨로티 침대
+                        </h3>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="pagination">
+            <li class="clicked"></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div class="btns">
+            <button class="btPrev">
+                <i class="xi-angle-left"></i>
+            </button>
+            <button class="btNext">
+                <i class="xi-angle-right"></i>
+            </button>
+        </div>
+    </div>
+    <div class="content bestItem imgChange txtBasic" data-aos="fade-down" data-aos-duration="3000">
+        <header>
+            <h3 data-aos="fade-down" data-aos-duration="3000">추천 제품</h3>
+        </header>
+        <section>
+            <div class="artView slide-view">
+                <div class="artGroup slide-group">
+                    <article class="slide-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="imgGroup">
+                            <div class="image i1"><img src="img/ratio43.png" alt=""></div>
+                            <div class="image i2"><img src="img/ratio43.png" alt=""></div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>BENS Product
+                                    <br><span>190X120 cm</span>
+                                </h5>
+                                <h5>300,000<span>원</span></h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="imgGroup">
+                            <div class="image i3"><img src="img/ratio43.png" alt=""></div>
+                            <div class="image i4"><img src="img/ratio43.png" alt=""></div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>BENS Product
+                                    <br><span>190X120 cm</span>
+                                </h5>
+                                <h5>300,000<span>원</span></h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up" data-aos-delay="900">
+                        <div class="imgGroup">
+                            <div class="image i5"><img src="img/ratio43.png" alt=""></div>
+                            <div class="image i6"><img src="img/ratio43.png" alt=""></div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>BENS Product
+                                    <br><span>190X120 cm</span>
+                                </h5>
+                                <h5>300,000<span>원</span></h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="btns btnsM">
+                    <button class="btPrev bt-prev">
+                        <i class="xi-angle-left"></i>
+                    </button>
+                    <button class="btNext bt-next">
+                        <i class="xi-angle-right"></i>
+                    </button>
+                </div>    
+            </div>
+        </section>
+    </div>
+    <div class="content bensPeople scale" data-aos="fade-down" data-aos-duration="3000">
+        <header>
+            <h3 data-aos="fade-down" data-aos-duration="3000">인테리어 아이디어</h3>
+        </header>
+        <section>
+            <div class="artView slide-view">
+                <div class="artGroup slide-group">
+                    <article class="slide-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sc">
+                            <div class="image i1">
+                                <img src="img/ratio34.png" alt="">
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>주방 갤러리</h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sc">
+                            <div class="image i2">
+                                <img src="img/ratio34.png" alt="">
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>거실 갤러리</h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sc">
+                            <div class="image i3">
+                                <img src="img/ratio34.png" alt="">
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>아이 방 갤러리</h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sc">
+                            <div class="image i4">
+                                <img src="img/ratio34.png" alt="">
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>욕실 갤러리</h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>        
+                </div>
+                <div class="btns btnsM">
+                    <button class="btPrev bt-prev">
+                        <i class="xi-angle-left"></i>
+                    </button>
+                    <button class="btNext bt-next">
+                        <i class="xi-angle-right"></i>
+                    </button>
+                </div>    
+            </div>
+        </section>
+    </div>
+    <div class="content mediaLounge imgChange txtBasic" data-aos="fade-down" data-aos-duration="3000">
+        <header>
+            <h3 data-aos="fade-down" data-aos-duration="3000">신제품</h3>
+        </header>
+        <section>
+            <div class="artView slide-view">
+                <div class="artGroup slide-group">
+                    <article class="slide-item" data-aos="fade-up">
+                        <div class="imgGroup">
+                            <div class="image i1"><img src="img/ratio43.png" alt=""></div>
+                            <div class="image i2"><img src="img/ratio43.png" alt=""></div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>BENS Product
+                                    <br><span>190X120 cm</span>
+                                </h5>
+                                <h5>300,000<span>원</span></h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up">
+                        <div class="imgGroup">
+                            <div class="image i3"><img src="img/ratio43.png" alt=""></div>
+                            <div class="image i4"><img src="img/ratio43.png" alt=""></div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>BENS Product
+                                    <br><span>190X120 cm</span>
+                                </h5>
+                                <h5>300,000<span>원</span></h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up">
+                        <div class="imgGroup">
+                            <div class="image i5"><img src="img/ratio43.png" alt=""></div>
+                            <div class="image i6"><img src="img/ratio43.png" alt=""></div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>BENS Product
+                                    <br><span>190X120 cm</span>
+                                </h5>
+                                <h5>300,000<span>원</span></h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>        
+                </div>
+                <div class="btns btnsM">
+                    <button class="btPrev bt-prev">
+                        <i class="xi-angle-left"></i>
+                    </button>
+                    <button class="btNext bt-next">
+                        <i class="xi-angle-right"></i>
+                    </button>
+                </div>    
+            </div>
+        </section>
+    </div>
+    <div class="content brandStory scale" data-aos="fade-down" data-aos-duration="3000">
+        <header>
+            <h3 data-aos="fade-down" data-aos-duration="3000">브랜드 이야기</h3>
+            <p>
+                한국 최초의 이탈리아 자사공장, 100% Made in Italy
+            </p>
+        </header>
+        <section>
+            <article data-aos="fade-up" data-aos-duration="1000">
+                <div class="sc">
+                    <div class="image i1">
+                        <img src="img/ratio43.png" alt="">
+                    </div>
+                </div>
+                <div class="texts">
+                    <div class="txtLeft">
+                        <h5>BENS에 대하여</h5>
+                    </div>
+                    <div class="txtRight">
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div class="content showRoom scale" data-aos="fade-down" data-aos-duration="3000">
+        <header>
+            <h3 data-aos="fade-down" data-aos-duration="3000">다양하게 만나보세요</h3>
+        </header>
+        <section>
+            <div class="artView slide-view">
+                <div class="artGroup slide-group">
+                    <article class="slide-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sc">
+                            <div class="image i1">
+                                <img src="img/ratio43.png" alt="">
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>매장안내</h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sc">
+                            <div class="image i2">
+                                <img src="img/ratio43.png" alt="">
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <div class="txtLeft">
+                                <h5>BENS 라이브</h5>
+                            </div>
+                            <div class="txtRight">
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>        
+                </div>
+                <div class="btns btnsM">
+                    <button class="btPrev bt-prev">
+                        <i class="xi-angle-left"></i>
+                    </button>
+                    <button class="btNext bt-next">
+                        <i class="xi-angle-right"></i>
+                    </button>
+                </div>    
+            </div>
+        </section>
+    </div>
+    <div class="ftrWrap">
+        <footer>
+            <menu>
+                <li>회사소개</li>
+                <li>|</li>
+                <li>수상내역</li>
+                <li>|</li>
+                <li>이용약관</li>
+                <li>|</li>
+                <li>개인정보취급방침</li>
+                <li>|</li>
+                <li>이용안내</li>
+            </menu>
+            <h1>BENS</h1>
+            <h2>상호명 : 주식회사 벤스코리아 ㅣ 대표자 : 황지현, 배성민
+                <br>대표전화 : 1544-1544 ㅣ 팩스 : 032-754-1544 ㅣ 개인정보보호관리책임자 : 황지현
+                <br>주소 : 서울특별시 강남구 선릉로 741
+                <br>사업자 등록번호 : 130-86-79874 ㅣ 통신판매업 신고 : 제2017-서울강남-02831호
+                <br>Copyright©2007 주식회사 벤스 All right reserved. Design by 벤스</h2>
+        </footer>
+    </div>
+    <div class="csInfo">
+        <footer>
+            <div class="artWrap a1">
+                <article>
+                    <h4>CUSTOMER CENTER</h4>
+                    <h3>1544-1544</h3>
+                    <h6>
+                        MON-FRI : 09:30 - 18:00
+                        <br>SAT : 09:30 - 16:00
+                    </h6>
+                </article>
+                <article>
+                    <h4>A/S CENTER</h4>
+                    <h3>1544-1544</h3>
+                    <h6>MON-FRI : 09:30 - 18:00</h6>
+                </article>
+            </div>
+            <div class="artWrap a2">
+                <article>
+                    <h4>FOLLOW US</h4>
+                    <h5>인스타그램<a href="https://www.instagram.com/bens.official/" target="_blank"><i
+                                class="xi-instagram"></i></a></h5>
+                    <h5>블로그<a href="https://blog.naver.com/benskorea1" target="_blank"><i class="xi-blogger"></i></a>
+                    </h5>
+                    <h5>페이스북<a href="https://ko-kr.facebook.com/BENSKOREA" target="_blank"><i
+                                class="xi-facebook-official"></i></a></h5>
+                </article>
+                <article class="width">
+                    <h4>HELP</h4>
+                    <nav>
+                        <button>NOTICE</button>
+                        <button>A/S 접수</button>
+                        <button>상품 Q&A</button>
+                        <button>재고 및 배송문의</button>
+                    </nav>
+                </article>
+            </div>
+        </footer>
+    </div>
+    <div class="btnTop">
+        <span id="tothetop"><i class="fas fa-arrow-up"></i></span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+@import 'mixin.scss';
+
+div.mnWrap {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+
+    .imgGroup {
+        width: 100%;
+        height: 600px;
+        position: relative;
+
+        .image {
+            @include img;
+            width: 100%;
+            height: 600px;
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: color;
+            padding: 80px 0 680px;
+            position: absolute;
+
+            header {
+                @include ctWidth;
+            }
+
+            .texts {
+                display: inline-block;
+                padding: 40px 10px
+            }
+
+            h2 {
+                @include ctFonts(700, 72px, 80px, #fff);
+            }
+
+            h3 {
+                @include ctFonts(300, 36px, 40px, #fff);
+                margin-top: 40px;
+            }
+        }
+
+        @for $n from 1 through 3 {
+            .i#{$n} {
+                background-image: url('../img/index/main_#{$n}.jpg');
+            }
+        }
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+
+div.content {
+    padding-top: 0;
+    margin-top: 80px;
+}
+
+div.bestItem {
+    background: linear-gradient(10deg, transparent 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 100% 720px;
+    background-repeat: no-repeat;
+
+    header {
+        text-align: right;
+    }
+
+    section {
+        article {
+            width: calc(100% / 3 - 20px);
+            &:nth-of-type(2) {
+                margin-top: 60px;
+            }
+
+            &:last-of-type {
+                margin-top: 120px;
+            }
+        }
+    }
+
+    @for $i from 1 through 6 {
+        .i#{$i} {
+            background-image: url('../img/index/best_item_#{$i}.jpg');
+        }
+    }
+}
+
+div.bensPeople {
+    background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+
+    header{
+        text-align: center;
+    }
+
+    section {
+        .artGroup {
+            align-items: flex-start;
+        }
+
+        article {
+            width: calc(100% / 4 - 20px);
+            position: relative;
+
+            &:nth-of-type(even) {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    @for $i from 1 through 6 {
+        .i#{$i} {
+            background-image: url('../img/index/bens_people_#{$i}.jpg');
+        }
+    }
+}
+
+div.mediaLounge {
+    background: linear-gradient(-10deg, transparent 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 100% 720px;
+    background-repeat: no-repeat;
+
+    section {
+        article {
+            width: calc(100% / 3 - 20px);
+            &:first-of-type {
+                margin-top: 120px;
+            }
+
+            &:nth-of-type(2) {
+                margin-top: 60px;
+            }
+        }
+    }
+
+    @for $i from 1 through 6 {
+        .i#{$i} {
+            background-image: url('../img/index/media_lounge_#{$i}.jpg');
+        }
+    }
+}
+
+div.brandStory {
+    background: linear-gradient(25deg, transparent 50%, #054d43 50.1%), linear-gradient(-25deg, transparent 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    header{
+        text-align: center;
+
+        p {
+            @include ctFonts(100, 18px, 30px, #fff);
+        }    
+    }
+
+    section {
+        article {
+            width: 55%;
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    @for $i from 1 through 2 {
+        .i#{$i} {
+            background-image: url('../img/index/brand_story_#{$i}.jpg');
+        }
+    }
+}
+
+div.showRoom {
+    background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+    background-position: left 0;
+    background-size: calc(100vw - 400px) 500px;
+    background-repeat: no-repeat;
+
+    header{
+        text-align: center;
+    }
+
+    section {
+        article {
+            width: calc(50% - 40px);
+            position: relative;
+        }
+    }
+
+    @for $i from 1 through 2 {
+        .i#{$i} {
+            background-image: url('../img/index/show_rooom_#{$i}.jpg');
+        }
+    }
+}
+
+@media (max-width:420px) {
+    @mixin ctWidth {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    div.mnWrap {
+        height: 300px;
+    
+        .imgGroup {
+            height: 300px;
+    
+            .image {
+                // height: 300px;
+                padding: 10px 0;
+    
+                .texts {
+                    padding: 10px;
+                }
+    
+                h2 {
+                    @include ctFonts(700, 36px, 40px, #fff);
+                }
+    
+                h3 {
+                    @include ctFonts(300, 12px, 20px, #fff);
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    div.content{
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    div.bestItem,
+    div.bensPeople,
+    div.brandStory,
+    div.showRoom{
+        header{
+            text-align: left !important;
+        }
+    }
+    div.bestItem {
+        background: none;
+    
+        section {
+            .artGroup {
+                width: 300%;
+            }
+
+            article {
+                &:nth-of-type(2) {
+                    margin-top: 0;
+                }
+    
+                &:last-of-type {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    div.bensPeople {
+        background: none;
+    
+        section {
+            .artGroup {
+                width: 400%;
+            }
+    
+            article {
+                &:nth-of-type(even) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    div.mediaLounge {
+        background: none;
+    
+        section {
+            .artGroup {
+                width: 300%;
+            }
+
+            article {
+                &:first-of-type {
+                    margin-top: 0;
+                }
+    
+                &:nth-of-type(2) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    div.brandStory {
+        background: none;
+
+        header{
+            p{
+                @include ctFonts(100, 12px, 20px, inherit);
+            }
+        }
+
+        section {
+            article {
+                width: 100%;
+            }
+        }
+    }
+    div.showRoom {
+        background: none;
+    
+        section {
+            .artGroup {
+                width: 200%;
+            }
+            article{
+                width: calc(50% - 20px);
+            }
+        }
+    }
+}

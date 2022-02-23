@@ -1,0 +1,271 @@
+@import 'mixin.scss';
+
+div.mnWrap {
+    background-image: url('../img/sub3_Media/main.jpg');
+    @include img;
+    height: 600px;
+    padding: 50px 0;
+}
+
+div.media {
+
+    // outline: 5px solid greenyellow;
+    section {
+        // outline: 5px solid blue;
+        width: 100vw;
+        max-width: unset;
+        margin-top: 160px;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    .s1 {
+        background: linear-gradient(0deg, #736656 50%, #736656 50.1%);
+        background-position: right 0 bottom 400px;
+        background-size: 85% 100%;
+        background-repeat: no-repeat;
+
+        article {
+            // outline: 1px solid red;
+            @include ctWidth;
+
+            header {
+                width: 700px;
+                background-color: #fff;
+                padding: 20px 0;
+
+                h4 {
+                    @include ctFonts(500, 36px, 40px, inherit);
+                }
+
+                h3 {
+                    line-height: 80px;
+                }
+            }
+
+            .image {
+                @include img;
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 40px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .s2 {
+        background: linear-gradient(0deg, #736656 50%, #736656 50.1%);
+        background-position: left 0 bottom 600px;
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+
+        article {
+            // outline: 1px solid red;
+            @include ctWidth;
+
+            header {
+                h4 {
+                    @include ctFonts(700, 36px, 40px, inherit);
+                    text-transform: uppercase;
+                    width: 180px;
+                    padding: 20px;
+                    margin: 0 auto;
+                    background-color: #fff;
+                }
+
+                p {
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 40px;
+                }
+            }
+
+            iframe {
+                // outline: 1px solid orange;
+                width: 100%;
+                height: 640px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .s3 {
+        @include ctWidth;
+        // margin-top: 160px;
+        background: linear-gradient(0deg, #736656 50%, #736656 50.1%);
+        background-position: top 0 center;
+        background-size: 90% 20%;
+        background-repeat: no-repeat;
+        padding-top: 40px;
+
+        @include dpFlex(space-around);
+
+        article {
+            // outline: 1px solid red;
+            width: calc((1200px / 2) - 20px);
+
+            .image {
+                @include img;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .texts {
+                text-align: center;
+                margin-top: 40px;
+
+                h5 {
+                    @include ctFonts(700, 24px, 40px, inherit);
+                }
+
+                h6 {
+                    @include ctFonts(300, 18px, 40px, inherit);
+                }
+
+                p {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+
+    .s4 {
+        background: linear-gradient(90deg, #736656 30%, #736656 30.1%);
+        background-position: right 0 bottom 0;
+        background-size: 80% 5%;
+        background-repeat: no-repeat;
+
+        article {
+            // outline: 1px solid red;
+            @include ctWidth;
+            margin-top: 40px;
+
+            &:first-of-type {
+                background: linear-gradient(90deg, #736656 30%, transparent 30.1%);
+                background-position: right 0 bottom 40px;
+                background-size: 42% 100%;
+                background-repeat: no-repeat;
+
+                margin-top: 0;
+
+                .image {
+                    margin-top: 40px;
+                    &:first-of-type{
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                background: linear-gradient(90deg, #736656 30%, #736656 30.1%);
+                background-position: left 0 bottom 0;
+                background-size: 50% 50%;
+                background-repeat: no-repeat;
+
+                .image {
+                    margin-left: auto;
+                }
+            }
+
+            &:last-of-type {
+                padding-bottom: 40px;
+            }
+
+            h4 {
+                @include ctFonts(700, 36px, 40px, inherit);
+                text-align: center;
+            }
+
+            .image {
+                @include img;
+                width: calc((100% / 12 * 8) - 20px);
+                height: 900px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .s5 {
+        @include ctWidth;
+        @include dpFlex(space-around);
+        flex-wrap: wrap;
+        row-gap: 40px;
+        margin-top: 80px;
+
+        article {
+            // outline: 1px solid red;
+            width: calc((100% / 3) - 20px);
+            position: relative;
+            cursor: pointer;
+
+            h5 {
+                // outline: 1px solid green;
+                display: none;
+                width: 100%;
+                height: 80px;
+                background-color: rgba(255, 255, 255, 0.7);
+                text-align: center;
+                line-height: 80px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transition: display 0.3s;
+            }
+
+            .image {
+                transition: box-shadow 0.3s;
+                img {
+                    width: 100%;
+                }
+            }
+            &:hover{
+                h5{
+                    display: block;
+                }
+                .image{
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
+        footer {
+            // outline: 1px solid red;
+            width: 100%;
+            border-top: 1px solid #293443;
+            border-bottom: 1px solid #293443;
+            margin: 0 10px;
+
+            h5 {
+                @include ctFonts(100, 18px, 40px, inherit);
+                cursor: default;
+
+                span {
+                    font-weight: 300;
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    @for $i from 1 through 9 {
+        .i#{$i} {
+            background-image: url('../img/sub3_Media/spring_#{$i}.jpg');
+        }
+    }
+}

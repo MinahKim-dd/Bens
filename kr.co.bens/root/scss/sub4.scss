@@ -1,0 +1,420 @@
+@import 'mixin.scss';
+
+div.mnWrap {
+    background-image: url('../img/sub4_WhyBens/main.jpg');
+}
+
+div.content{
+    padding-top: 0;
+    margin-top: 80px;
+
+    header{
+        text-align: center;
+
+        p {
+            @include ctFonts(100, 18px, 30px, #fff);
+        }    
+    }
+    section{
+        h5{
+            @include ctFonts(700, 24px, 40px, #000);
+        }
+        h6,
+        li{
+            @include ctFonts(300, 16px, 30px, #000);
+        }   
+}
+}
+
+div.about {
+    background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+    background-position: right 0;
+    background-size: 70% 140px;
+    background-repeat: no-repeat;
+}
+
+div.mission{
+    // background: linear-gradient(-10deg, transparent 50%, #054d43 50.1%);
+    // background-position: 0 0;
+    // background-size: 100% 1100px;
+    // background-repeat: no-repeat;
+
+    background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 100% 140px;
+    background-repeat: no-repeat;
+
+    section {
+        @include dpFlex(space-around);
+
+        div{
+            width: 50%;
+        }
+        .imgViewLft {
+            height: 70vh;
+            position: relative;
+    
+            .imgGroup {
+                width: 100%;
+                @include dpFlex(space-around);
+                position: relative;
+    
+                .image {
+                    width: calc(100% - 20px);
+                    height: 70vh;
+                    position: absolute;
+                }
+            }
+                @for $n from 1 to 4 {
+                .i#{$n}{
+                    background-image: url('../img/sub4_WhyBens/designer_#{$n}.jpg');
+                }
+            }
+        }
+    
+        .imgViewRgh {
+            div{
+                width: calc(100% - 20px);
+                margin: 0 auto;
+            }
+            .txtFlip {
+                height: 30vh;
+                padding: 5vh 3vw 5vh 1.5vw;
+                background-color: #f5f3f0;
+                position: relative;
+
+                .h5View {
+                    // outline: 2px solid blue;
+                    width: 100%;
+                    height: 40px;
+                    // position: relative;
+                    overflow: hidden;
+                    .hGroup {
+                        width: 300%;
+                        @include dpFlex(flex-start);
+                        position: relative;
+
+                        h5 {
+                            width: 33.33%;
+                            height: 40px;
+                        }     
+                    }
+                }
+    
+                .h6View {
+                    // outline: 2px solid red;
+                    width: 100%;
+                    height: 120px;
+                    margin-top: 20px;
+                    overflow: hidden;
+                    .hGroup {
+                        width: 100%;
+                        position: relative;
+                        h6 {
+                            height: 120px;
+                        }      
+                    }
+                }
+                .btnsP {
+                    // outline: 2px solid red;
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    right: 10px;
+                    left: auto;
+                    top: auto;
+                    bottom: 10px;
+                    z-index: 1;
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        border: 0;
+                        border-radius: 50%;
+                        i{
+                            @include ctFonts(300, 20px, 40px, #fff);
+                        }
+                        &:first-of-type{
+                            display: none;
+                        }
+                    }
+                }    
+            }
+            .imgViewBot {
+                height: 40vh;
+                .imgGroup {
+                    width: 100%;
+                    height: calc(40vh * 3);
+                    position: relative;
+                    .image {
+                        width: 100%;
+                        height: calc(100% / 3);
+                        position: absolute;
+                    }
+                }
+                @for $n from 1 to 4 {
+                    .i#{$n}{
+                        background-image: url('../img/sub4_WhyBens/mission_#{$n}.jpg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.vision {
+    background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 70% 140px;
+    background-repeat: no-repeat;
+}
+
+div.lab{
+    background: linear-gradient(10deg, #054d43 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 100% 140px;
+    background-repeat: no-repeat;
+
+    section{
+        @include dpFlex(space-around);
+        flex-direction: row-reverse;
+
+        .imgViewLft,
+        .imgViewRgh
+        {
+            width: 50%;
+        }
+
+        .imgViewLft {
+            height: 70vh;
+            position: relative;
+    
+            .imgGroup {
+                width: 100%;
+                @include dpFlex(space-around);
+                position: relative;
+    
+                .image {
+                    width: calc(100% - 20px);
+                    height: 70vh;
+                    position: absolute;
+                }
+            }
+        }
+    
+        .imgViewRgh {
+            @include dpFlex(space-between);
+            flex-direction: column;
+            .txtFlip {
+                width: calc(100% - 20px);
+                height: 60vh;
+                margin: 0 auto;
+                background-color: #f5f3f0;
+                // border-radius: 0 50% 0 50%;
+                padding: 0 1.5vw;
+                span{
+                    position: relative;
+                }
+                h5{
+                    @include ctFonts(300, 24px, 4vh, #000);
+                    text-align: center;
+
+                }
+                h3{
+                    @include ctFonts(700, 120px, 28vh, #000);
+                    text-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+                    vertical-align: top;
+                    &:last-of-type{
+                        text-align: right;
+                    }
+                }
+            }
+            .imgViewBot {
+                width: 100%;
+                .imgGroup {
+                    width: 100%;
+                    @include dpFlex(space-around);
+                    .sc{
+                        width: calc(100% / 4 - 20px);
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                    .image {
+                        height: 10vh;
+                        transform: scale(1);
+                        transition: scale 0.5s;            
+                    }
+                }
+            }
+        }
+    }
+    @for $n from 1 to 5 {
+        .i#{$n}{
+            background-image: url('../img/sub4_WhyBens/lab_#{$n}.jpg');
+        }
+    }
+}
+
+div.history {
+    background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+    background-position: 0 0;
+    background-size: 100% 140px;
+    background-repeat: no-repeat;
+
+    section {
+        article{
+            // width: 100%;
+            position: relative;
+            @include dpFlex(space-between);
+            .bg{
+                position: relative;
+                z-index: -1;
+            }
+            .image{
+                // width: calc(50% - 20px);
+                width: 40%;
+                height: 70vh;
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                position: fixed;
+                top: 140px;
+                z-index: 1;
+            }
+            .i2{
+                opacity: 0;
+            }
+            .i3{
+                opacity: 0;
+            }
+            .txtGroup{
+                width: calc(50% - 20px);
+                // margin-left: calc(50% + 20px);
+                background-color: #f5f3f0;
+                // position: absolute;
+                // top: 0;
+                // right: 0;
+                .texts{
+                    flex-direction: column;
+                    // justify-content: flex-start;
+                    align-items: flex-start;
+                    margin: 0;
+                    h5{
+                        font-size: 36px;
+                        margin-top: 40px;
+                    }
+                    ul{
+                        padding: 0 1.5vw;
+                        li{
+                            list-style: circle;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @for $n from 1 to 5 {
+        .i#{$n}{
+            background-image: url('../img/sub4_WhyBens/designer_#{$n}.jpg');
+        }
+    }
+}
+
+@media (min-width:421px){
+    div.mission{
+        section{
+            .imgViewRgh{
+                .btns:hover {
+                    height: 41px;
+                    button {
+                        width: 41px;
+                        i{
+                            @include ctFonts(300, 24px, 41px, #fff);
+                        }
+                    }
+                }    
+            }
+        }
+    }
+    div.lab{
+        section{
+                .imgViewBot{
+                        .sc:hover{
+                            .image{
+                                transform: scale(1.1);
+                            }
+                        }
+                }
+        }
+    }
+}
+@media (max-width:420px) {
+    div.content{
+        padding-top: 0;
+        margin-top: 40px;
+        section{
+            h5{
+                @include ctFonts(700, 18px, 20px, inherit);
+            }
+            h6{
+                @include ctFonts(300, 14px, 20px, inherit);
+            }         
+    }
+    }
+    div.about,
+    div.mission,
+    div.vision{
+        background: none;
+        header{
+            text-align-last: left;
+        }
+    }
+    div.mission{
+        section{
+            flex-direction: column-reverse;
+            .imgViewLft{
+                display: none;
+                // width: 100%;
+                // height: 250px;
+                // .imgGroup{
+                //     .image{
+                //         width: 100%;
+                //     }
+                // }
+            }
+            .imgViewRgh{
+                width: 100%;
+                .txtFlip{
+                    // outline: 2px solid red;
+                    height: 130px;
+                    padding: 0;
+                    .h5View{
+                        height: 20px;
+                        .hGroup{
+                            h5{
+                                height: 20px;
+                            }
+                        }
+                    }
+                    .h6View{
+                        // outline: 2px solid blue;
+                        height: 80px;
+                        margin-top: 10px;
+                        .hGroup{
+                            h6{
+                                height: 80px;
+                            }
+                        }
+                    }
+                }
+                .imgViewBot{
+                    height: 250px;
+                    .imgGroup{
+                        height: calc(250px * 3);
+                    }
+                }    
+            }
+        }
+    }
+}

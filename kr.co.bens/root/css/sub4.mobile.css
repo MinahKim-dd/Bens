@@ -1,0 +1,273 @@
+div.mnWrap {
+  height: 100px;
+  padding: 3px 0;
+}
+
+div.mnWrap main .texts {
+  width: 260px;
+}
+
+div.content {
+  padding: 40px 0;
+}
+
+div.content section header {
+  width: 100%;
+}
+
+div.content section h3 {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+div.content section h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: inherit;
+}
+
+div.content section h5 {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+}
+
+div.content section p {
+  background-color: #fff;
+  margin: 0;
+}
+
+div.about .s1 {
+  background: none;
+}
+
+div.about .s1 article header h3 {
+  width: 200px;
+}
+
+div.about .s1 article .imgGroup {
+  display: none;
+}
+
+div.about .s1 article .txtGroup {
+  display: none;
+}
+
+div.about .s2 {
+  background: none;
+  margin-top: 0;
+}
+
+div.about .s2 article {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+div.about .s2 article h4, div.about .s2 article h5 {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: inset 0px 0px 10px #293443;
+          box-shadow: inset 0px 0px 10px #293443;
+}
+
+div.about .s2 article h4 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+  width: 30%;
+  padding: 10px 0 10px 10px;
+}
+
+div.about .s2 article h4 br {
+  display: block;
+}
+
+div.about .s2 article h5 {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 20px;
+  color: inherit;
+  width: 70%;
+  padding: 10px;
+}
+
+div.about .s2 article:nth-of-type(3) h4,
+div.about .s2 article:nth-of-type(4) h4,
+div.about .s2 article:last-of-type h4 {
+  padding: 10px;
+}
+
+div.about .s2 article:nth-of-type(6) h5 {
+  padding: 10px;
+}
+
+div.about .s2 article:last-of-type h5 {
+  padding: 10px;
+}
+
+div.about .s2 article:first-of-type {
+  margin-top: 20px;
+}
+
+div.space section {
+  background: none;
+}
+
+div.space section article header h3 {
+  width: 180px;
+}
+
+div.space section article .imgWrap {
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+}
+
+div.space section article .imgWrap .imgGroup {
+  height: 260px;
+}
+
+div.space section article .imgWrap .imgGroup .image {
+  height: 260px;
+}
+
+div.mission {
+  display: none;
+}
+
+div.factory section {
+  background: none;
+}
+
+div.factory section article header h3 {
+  width: 260px;
+}
+
+div.factory section article header br {
+  display: block;
+}
+
+div.factory section article .imgWrap {
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+}
+
+div.factory section article .imgWrap .imgGroup {
+  height: 260px;
+}
+
+div.factory section article .imgWrap .imgGroup .image {
+  height: 260px;
+}
+
+div.designers section {
+  background: none;
+}
+
+div.designers section article {
+  position: relative;
+}
+
+div.designers section article header {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  background-color: transparent;
+}
+
+div.designers section article header h3 {
+  width: 200px;
+}
+
+div.designers section article header p {
+  background-color: transparent;
+}
+
+div.designers section article header p br {
+  display: none;
+}
+
+div.designers section article h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 260px;
+  left: 10px;
+  z-index: 1;
+}
+
+div.designers section article .image {
+  background-color: #736656;
+}
+
+div.designers section article .i1 {
+  width: 55%;
+  height: 260px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+div.designers section article .i2 {
+  width: 100%;
+  height: 260px;
+  position: absolute;
+  top: 360px;
+  left: 0;
+}
+
+div.designers section article .bg {
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  margin-top: 200px;
+  margin-bottom: 280px;
+}
+
+div.history section {
+  background: none;
+}
+
+div.history section article header h3 {
+  width: 140px;
+}
+
+div.history section article .image {
+  width: 100%;
+  height: 260px;
+  margin: 0;
+  margin-top: 0;
+}
+
+div.history section article .txtGroup {
+  margin: 0;
+  margin-top: 10px;
+}
+
+div.history section article .txtGroup .texts {
+  padding: 5px 0;
+}
+
+div.history section article .txtGroup .texts h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: inherit;
+  margin: 0;
+  padding-right: 30px;
+}
+
+div.history section article .txtGroup .texts li {
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+}

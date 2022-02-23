@@ -1,0 +1,52 @@
+@mixin ctWidth {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin ctFonts($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin dpFlex ($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
+.search{
+    // display: none;
+    position: absolute;
+    margin: auto;
+    top: 60px;
+    right: 15%;
+
+    form{
+        // outline: 1px solid red;
+        @include dpFlex(space-between);
+        width: 410px;
+        margin: 0 auto;
+        input{
+            @include ctFonts(300, 16px, 40px, inherit);
+            display: block;
+            width: 80%; height: 50px;
+            border: 1px solid #293443;
+            &:last-of-type{
+                width: 20%;
+                background-color: #293443;
+                color: #fff;
+            }
+        }
+    }
+    .texts{
+        h5{
+            @include ctFonts(700, 16px, 40px, inherit);
+            border-bottom: 1px solid #293443;
+        }
+        h6{
+            @include ctFonts(300, 14px, 20px, inherit);
+        }
+    }
+}

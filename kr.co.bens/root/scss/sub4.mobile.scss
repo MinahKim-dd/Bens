@@ -1,0 +1,305 @@
+@mixin ctWidth {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin ctFonts($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin dpFlex ($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
+@mixin img {
+    background-position: center;
+    background-size: cover;
+}
+
+div.mnWrap {
+    height: 100px;
+    padding: 3px 0;
+
+    main {
+        .texts {
+            width: 260px;
+        }
+    }
+}
+
+div.content {
+    // outline: 5px solid greenyellow;
+    padding: 40px 0;
+
+    section {
+        // outline: 5px solid blue;
+
+        article {
+            // outline: 1px solid red;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        h3 {
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        h4 {
+            @include ctFonts(700, 18px, 40px, inherit);
+        }
+
+        h5{
+            @include ctFonts(300, 12px, 20px, inherit);
+        }
+
+        p {
+            background-color: #fff;
+            margin: 0;
+        }
+    }
+}
+
+div.about {
+    .s1 {
+        background: none;
+
+        article {
+
+            header {
+                h3 {
+                    width: 200px;
+                }
+            }
+
+            .imgGroup {
+                display: none;
+            }
+
+            .txtGroup {
+                display: none;
+            }
+        }
+    }
+
+    .s2 {
+        background: none;
+        margin-top: 0;
+
+        article {
+            justify-content: space-between;
+            margin-top: 10px;
+
+            h4, h5{
+                background-color: rgba(255, 255, 255, 0.5);
+                box-shadow: inset 0px 0px 10px #293443;
+            }
+
+            h4 {
+                @include ctFonts(700, 12px, 20px, inherit);
+                width: 30%;
+                padding: 10px 0 10px 10px;
+                br{
+                    display: block;
+                }
+            }
+
+            h5 {
+                @include ctFonts(300, 10px, 20px, inherit);
+                width: 70%;
+                padding: 10px;
+            }
+
+            &:nth-of-type(3) h4,
+            &:nth-of-type(4) h4,
+            &:last-of-type h4 {
+                padding: 10px;
+            }
+
+            &:nth-of-type(6) h5 {
+                padding: 10px;
+            }
+
+            &:last-of-type h5 {
+                padding: 10px;
+            }
+
+            &:first-of-type {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+div.space {
+    section {
+        background: none;
+
+        article {
+            header {
+                h3 {
+                    width: 180px;
+                }
+            }
+
+            .imgWrap {
+                width: 100%;
+                margin: 0;
+                margin-top: 20px;
+
+                .imgGroup {
+                    height: 260px;
+
+                    .image {
+                        height: 260px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.mission {
+    display: none;
+}
+
+div.factory {
+    section {
+        background: none;
+
+        article {
+            header {
+                h3 {
+                    width: 260px;
+                }
+                br{
+                    display: block;
+                }
+            }
+
+            .imgWrap {
+                width: 100%;
+                margin: 0;
+                margin-top: 20px;
+
+                .imgGroup{
+                    height: 260px;
+                    .image{
+                        height: 260px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.designers {
+    section {
+        background: none;
+        
+        article {
+            position: relative;
+
+            header {
+                // outline: 1px solid hotpink;
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+                background-color: transparent;
+                h3{
+                    width: 200px;
+                }
+                p{
+                    background-color: transparent;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+
+            h2 {
+                @include ctFonts(700, 36px, 40px, #fff);
+                width: 100%;
+                position: absolute;
+                top: 260px;
+                left: 10px;
+                z-index: 1;
+            }
+
+            .image {
+                background-color: #736656;
+            }
+
+            .i1 {
+                width: 55%;
+                height: 260px;
+                position: absolute;
+                top: 80px;
+                left: 0;
+            }
+
+            .i2 {
+                width: 100%;
+                height: 260px;
+                position: absolute;
+                top: 360px;
+                left: 0;
+            }
+
+            .bg {
+                width: 100%;
+                height: 80px;
+                margin: 0;
+                margin-top: 200px;
+                margin-bottom: 280px;
+            }
+        }
+    }
+}
+
+div.history {
+    section {
+        background: none;
+
+        article {
+            header {
+                h3 {
+                    width: 140px;
+                }
+            }
+
+            .image {
+                width: 100%;
+                height: 260px;
+                margin: 0;
+                margin-top: 0;
+            }
+
+            .txtGroup {
+                margin: 0;
+                margin-top: 10px;
+
+                .texts {
+                    padding: 5px 0;
+
+                    h3 {
+                        @include ctFonts(700, 18px, 20px, inherit);
+                        margin: 0;
+                        padding-right: 30px;
+                    }
+
+                    li {
+                        @include ctFonts(100, 12px, 20px, inherit);
+                    }
+                }
+            }
+        }
+    }
+}

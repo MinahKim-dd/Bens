@@ -1,0 +1,128 @@
+@import 'mixin.scss';
+
+div.loginBox{
+    padding: 80px 0;
+    header{
+        text-align: center;
+        h3{
+            @include ctFonts(700, 48px, 60px, inherit);
+            text-transform: capitalize;
+        }
+        h4{
+            @include ctFonts(300, 18px, 40px, inherit);
+            margin-top: 20px;
+        }    
+    }
+    section{
+        margin-top: 20px;
+        form{
+            width: 410px;
+            margin: 0 auto;
+            input{
+                @include ctFonts(300, 16px, 40px, inherit);
+                display: block;
+                width: 410px; height: 50px;
+                border: 1px solid #054d43;
+                border-radius: 5px;
+                &[type=text]{
+                    padding: 0 10px;
+                    &:focus{
+                        background-color: #f5f3f0;
+                    }
+                }
+                &[type=password]{
+                    padding: 0 10px;
+                    margin-top: 10px;
+                    &:focus{
+                        background-color: #f5f3f0;
+                    }
+                }
+                &[type=submit]{
+                    border: 1px solid #054d43;
+                    background-color: #054d43;
+                    color: #fff;
+                    margin-top: 30px;
+                
+                }
+            }
+        }
+        .f2{
+            @include dpFlex(space-around);
+            margin-top: 20px;
+            div{
+                width: calc(50% - 20px);
+                h5{
+                    @include ctFonts(300, 16px, 40px, #777);
+                }
+            }
+            .find{
+                @include dpFlex(space-between);
+            }
+            .sign{
+                h5{
+                    text-align: right;
+                    text-decoration: underline;
+                    text-underline-position: under;    
+                }
+            }    
+        }
+    
+        .f3{
+            @include dpFlex(space-between);
+            margin-top: 40px;
+            button{
+                @include ctFonts(300, 16px, 40px, #fff);
+                width: 200px;
+                height: 50px;
+                border: 0;
+                border-radius: 5px;
+                text-align: center;
+                background-color: #06be34;
+                &:last-of-type{
+                    background-color: #fee502;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:420px){
+    div.loginBox{
+        padding: 40px 0;
+        header{
+            h3{
+                @include ctFonts(700, 24px, 40px, inherit);
+            }
+            h4{
+                @include ctFonts(300, 12px, 40px, inherit);
+                margin-top: 0;
+            }    
+        }
+        section{
+            form{
+                width: 300px;
+                input{
+                    @include ctFonts(300, 12px, 40px, inherit);
+                    width: 300px; height: 40px;
+                }
+            }
+            .f2{
+                div{
+                    width: 50%;
+                    h5{
+                        @include ctFonts(300, 12px, 40px, #777);
+                    }
+                }
+            }
+        
+            .f3{
+                button{
+                    @include ctFonts(300, 12px, 40px, #fff);
+                    width: 140px;
+                    height: 40px;
+                }
+            }
+        }
+    }    
+}

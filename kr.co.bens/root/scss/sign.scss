@@ -1,0 +1,305 @@
+@import 'mixin.scss';
+
+div.signUp {
+    @include ctWidth;
+    padding: 80px 0;
+
+    header {
+        text-align: center;
+
+        h3 {
+            @include ctFonts(700, 48px, 60px, inherit);
+            text-transform: capitalize;
+        }
+
+        h4 {
+            @include ctFonts(300, 18px, 40px, inherit);
+            margin-top: 20px;
+        }
+    }
+
+    section {
+        margin-top: 20px;
+
+        form {
+            border-top: 1px solid #054d43;
+            padding: 20px 0;
+
+            h4 {
+                @include ctFonts(700, 18px, 40px, inherit);
+                text-align: center;
+            }
+
+            h5 {
+                @include ctFonts(300, 16px, 40px, inherit);
+            }
+
+            h6 {
+                @include ctFonts(300, 12px, 40px, inherit);
+            }
+
+            input {
+                @include ctFonts(300, 16px, 40px, inherit);
+                display: block;
+                width: 100%;
+                height: 50px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 0 10px;
+
+                &:focus {
+                    background-color: #f5f3f0;
+                }
+            }
+        }
+
+        .f1 {
+
+            .password {
+                @include dpFlex(space-between);
+                flex-wrap: wrap;
+
+                div {
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+
+        .f2 {
+            .wrap {
+                @include dpFlex(space-between);
+                align-items: flex-start;
+
+                .personal {
+                    width: calc(50% - 10px);
+
+                    h5:last-of-type {
+                        margin-top: 30px;
+                    }
+                }
+
+                .address {
+                    width: calc(50% - 10px);
+
+                    .ad1 {
+                        @include dpFlex(space-between);
+
+                        input[type=text] {
+                            width: calc(70% - 5px);
+                        }
+
+                        input[type=submit] {
+                            width: calc(30% - 5px);
+                            background-color: #f5f3f0;
+                        }
+                    }
+
+                    .ad2 {
+                        input {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .f3 {
+            .agree {
+                @include dpFlex(space-between);
+
+                .txtBox {
+                    width: calc(50% - 10px);
+
+                    .t1 {
+                        @include dpFlex(space-between);
+
+                        h5 {
+                            width: 80%;
+                            font-size: 14px;
+
+                            &:last-of-type {
+                                font-weight: 500;
+                                width: 20%;
+                                text-align: right;
+                                text-decoration: underline;
+                                text-underline-position: under;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .txtHide {
+                        display: none;
+                        height: 200px;
+                        margin-top: 20px;
+                        overflow: auto;
+
+                        h6 {
+                            @include ctFonts(300, 12px, 20px, inherit);
+                            margin-top: 20px;
+
+                            &:first-of-type {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                    .t2 {
+                        @include dpFlex(space-between);
+                        margin-top: 20px;
+
+                        h5 {
+                            width: 80%;
+                            font-size: 14px;
+                        }
+
+                        fieldset {
+                            @include dpFlex(flex-end);
+                            align-items: center;
+
+                            input {
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            label {
+                                @include ctFonts(500, 14px, 40px, inherit);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .f4 {
+            input {
+                width: calc(50% - 20px);
+                border: 1px solid #054d43;
+                background-color: #054d43;
+                color: #fff;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    div.signUp {
+        max-width: 400px;
+        padding: 40px 0;
+
+        header {
+            h3 {
+                @include ctFonts(700, 24px, 40px, inherit);
+            }
+
+            h4 {
+                @include ctFonts(300, 12px, 40px, inherit);
+                margin-top: 0;
+            }
+        }
+
+        section {
+            margin-top: 10px;
+
+            form {
+                padding: 10px 0 20px;
+
+                h4 {
+                    @include ctFonts(700, 12px, 40px, inherit);
+                }
+
+                h5 {
+                    @include ctFonts(300, 12px, 40px, inherit);
+                }
+
+                h6 {
+                    @include ctFonts(300, 10px, 20px, inherit);
+                }
+
+                input {
+                    @include ctFonts(300, 12px, 40px, inherit);
+                    height: 40px;
+                }
+            }
+
+            .f1 {
+                .password {
+                    display: block;
+
+                    div {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .f2 {
+                .wrap {
+                    display: block;
+
+                    .personal {
+                        width: 100%;
+
+                        h5:last-of-type {
+                            margin-top: 0;
+                        }
+                    }
+
+                    .address {
+                        width: 100%;
+                    }
+
+                }
+            }
+
+            .f3 {
+                .agree {
+                    display: block;
+
+                    .txtBox {
+                        width: 100%;
+
+                        .t1 {
+                            h5 {
+                                @include ctFonts(300, 12px, 30px, inherit);
+                            }
+                        }
+
+                        .txtHide {
+                            h6 {
+                                @include ctFonts(300, 10px, 20px, inherit);
+                            }
+                        }
+
+                        .t2 {
+                            margin-top: 0;
+
+                            h5 {
+                                @include ctFonts(300, 12px, 30px, inherit);
+                            }
+
+                            fieldset {
+                                input {
+                                    width: 12px;
+                                    height: 12px;
+                                }
+
+                                label {
+                                    @include ctFonts(500, 12px, 30px, inherit);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .f4 {
+                input {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,219 @@
+@mixin ctWidth {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@mixin ctFonts($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin dpFlex ($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
+@mixin img {
+    background-position: center;
+    background-size: cover;
+}
+
+div.mnWrap {
+    height: 80px;
+    padding: 3px 0;
+}
+
+div.bensPeople {
+    .s1 {
+        background-position: 0 0;
+        background-size: 100% 200px;
+        margin-top: 0;
+
+        article {
+            // outline: 1px solid red;
+            display: block;
+
+            header {
+                // outline: 1px solid red;
+                width: auto;
+                position: static;
+
+                h2 {
+                    @include ctFonts(700, 36px, 40px, inherit);
+                }
+
+                h3 {
+                    // outline: 1px solid blue;
+                    @include ctFonts(700, 18px, 40px, inherit);
+                }
+            }
+
+            p {
+                // outline: 1px solid purple;
+                text-align: center;
+                width: 100%;
+                padding-top: 0;
+                padding-right: 0;
+                position: absolute;
+                top: 450px;
+            }
+
+            .image {
+                width: 80%;
+                height: 340px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .s2 {
+        display: none;
+        // background: none;
+        // margin-top: 40px;
+
+        // article {
+
+        //     .image {
+        //         width: calc(100% / 4 * 3);
+        //         margin: 0 auto;
+        //     }
+
+        //     .i3 {
+        //         margin-top: 20px;
+        //     }
+
+        // }
+    }
+
+    .s3 {
+        background: none;
+        margin-top: 80px;
+
+        article {
+            // outline: 1px solid red;
+            display: block;
+            // @include dpFlex(space-around);
+            // align-items: center;
+
+            .image {
+                width: 100%;
+                height: 400px;
+                margin: 0;
+            }
+
+            .texts {
+                // outline: 1px solid purple;
+                background-color: #fff;
+                width: 90%;
+                margin: 0;
+                padding: 10px;
+
+                h3 {
+                    @include ctFonts(700, 16px, 30px, inherit);
+                }
+            }
+
+            &:first-of-type {
+                .bg {
+                    display: none;
+                }
+
+                .i4 {
+                    margin: 0;
+                }
+            }
+
+            &:last-of-type {
+                margin-top: 20px;
+                position: static;
+
+
+                .bg11 {
+                    display: none;
+                }
+
+                .i5 {
+                    position: static;
+                    margin: 0px;
+                }
+
+                .bg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .s4 {
+        margin-top: 80px;
+
+        article {
+
+            header {
+                width: 100%;
+                margin: 0;
+
+                h2 {
+                    @include ctFonts(700, 36px, 40px, inherit);
+                }
+
+                h3 {
+                    @include ctFonts(700, 16px, 40px, inherit);
+                }
+            }
+
+            .image {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .s5 {
+        row-gap: 20px;
+        margin-top: 40px;
+
+        header {
+            // outline: 1px solid red;
+            margin: 0;
+
+            h4 {
+                @include ctFonts(700, 18px, 20px, inherit);
+
+                &:last-of-type {
+                    display: none;
+                }
+            }
+
+            p {
+                @include ctFonts(100, 14px, 30px, inherit);
+                margin-top: 10px;
+            }
+        }
+
+        article {
+            display: none;
+        }
+
+        footer {
+            margin: 0;
+            margin-top: 20px;
+
+            h5 {
+                @include ctFonts(100, 12px, 20px, inherit);
+                height: 20px;
+                overflow: hidden;
+                pointer-events: none;
+
+                span {
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css"> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/aos.js"></script>
+</head>
+<body>
+    <? include 'head.html' ?>
+    <div class="content loginBox">
+        <header>
+            <h3>Login to your account.</h3>
+            <h4>아이디와 비밀번호를 입력해주세요.</h4>
+        </header>
+        <section>
+            <form class="f1">
+                <input type="text" placeholder="아이디">
+                <input type="password" placeholder="비밀번호">
+                <input type="submit" value="로그인">
+            </form>
+            <form class="f2">
+                <div class="find">
+                    <h5><a href="">아이디찾기</a></h5>
+                    <h5><a href="">비밀번호찾기</a></h5>
+                </div>
+                <div class="sign">
+                    <h5><a href="sign.html">회원가입</a></h5>
+                </div>
+            </form>
+            <form class="f3">
+                <button>네이버 로그인</button>
+                <button>카카오 로그인</button>
+            </form>
+        </section>
+    </div>
+    <? include 'tail.html' ?>
+</body>
+</html>

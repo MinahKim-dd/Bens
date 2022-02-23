@@ -1,0 +1,513 @@
+div.mnWrap {
+  background-image: url("../img/sub4_WhyBens/main.jpg");
+}
+
+div.content {
+  padding-top: 0;
+  margin-top: 80px;
+}
+
+div.content header {
+  text-align: center;
+}
+
+div.content header p {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+
+div.content section h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000;
+}
+
+div.content section h6,
+div.content section li {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000;
+}
+
+div.about {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #054d43), color-stop(50.1%, #054d43));
+  background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+  background-position: right 0;
+  background-size: 70% 140px;
+  background-repeat: no-repeat;
+}
+
+div.mission {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #054d43), color-stop(50.1%, #054d43));
+  background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 100% 140px;
+  background-repeat: no-repeat;
+}
+
+div.mission section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.mission section div {
+  width: 50%;
+}
+
+div.mission section .imgViewLft {
+  height: 70vh;
+  position: relative;
+}
+
+div.mission section .imgViewLft .imgGroup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+div.mission section .imgViewLft .imgGroup .image {
+  width: calc(100% - 20px);
+  height: 70vh;
+  position: absolute;
+}
+
+div.mission section .imgViewLft .i1 {
+  background-image: url("../img/sub4_WhyBens/designer_1.jpg");
+}
+
+div.mission section .imgViewLft .i2 {
+  background-image: url("../img/sub4_WhyBens/designer_2.jpg");
+}
+
+div.mission section .imgViewLft .i3 {
+  background-image: url("../img/sub4_WhyBens/designer_3.jpg");
+}
+
+div.mission section .imgViewRgh div {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+div.mission section .imgViewRgh .txtFlip {
+  height: 30vh;
+  padding: 5vh 3vw 5vh 1.5vw;
+  background-color: #f5f3f0;
+  position: relative;
+}
+
+div.mission section .imgViewRgh .txtFlip .h5View {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+div.mission section .imgViewRgh .txtFlip .h5View .hGroup {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+div.mission section .imgViewRgh .txtFlip .h5View .hGroup h5 {
+  width: 33.33%;
+  height: 40px;
+}
+
+div.mission section .imgViewRgh .txtFlip .h6View {
+  width: 100%;
+  height: 120px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+div.mission section .imgViewRgh .txtFlip .h6View .hGroup {
+  width: 100%;
+  position: relative;
+}
+
+div.mission section .imgViewRgh .txtFlip .h6View .hGroup h6 {
+  height: 120px;
+}
+
+div.mission section .imgViewRgh .txtFlip .btnsP {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  left: auto;
+  top: auto;
+  bottom: 10px;
+  z-index: 1;
+}
+
+div.mission section .imgViewRgh .txtFlip .btnsP button {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  border-radius: 50%;
+}
+
+div.mission section .imgViewRgh .txtFlip .btnsP button i {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+}
+
+div.mission section .imgViewRgh .txtFlip .btnsP button:first-of-type {
+  display: none;
+}
+
+div.mission section .imgViewRgh .imgViewBot {
+  height: 40vh;
+}
+
+div.mission section .imgViewRgh .imgViewBot .imgGroup {
+  width: 100%;
+  height: calc(40vh * 3);
+  position: relative;
+}
+
+div.mission section .imgViewRgh .imgViewBot .imgGroup .image {
+  width: 100%;
+  height: calc(100% / 3);
+  position: absolute;
+}
+
+div.mission section .imgViewRgh .imgViewBot .i1 {
+  background-image: url("../img/sub4_WhyBens/mission_1.jpg");
+}
+
+div.mission section .imgViewRgh .imgViewBot .i2 {
+  background-image: url("../img/sub4_WhyBens/mission_2.jpg");
+}
+
+div.mission section .imgViewRgh .imgViewBot .i3 {
+  background-image: url("../img/sub4_WhyBens/mission_3.jpg");
+}
+
+div.vision {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #054d43), color-stop(50.1%, #054d43));
+  background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 70% 140px;
+  background-repeat: no-repeat;
+}
+
+div.lab {
+  background: linear-gradient(10deg, #054d43 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 100% 140px;
+  background-repeat: no-repeat;
+}
+
+div.lab section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+div.lab section .imgViewLft,
+div.lab section .imgViewRgh {
+  width: 50%;
+}
+
+div.lab section .imgViewLft {
+  height: 70vh;
+  position: relative;
+}
+
+div.lab section .imgViewLft .imgGroup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+div.lab section .imgViewLft .imgGroup .image {
+  width: calc(100% - 20px);
+  height: 70vh;
+  position: absolute;
+}
+
+div.lab section .imgViewRgh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.lab section .imgViewRgh .txtFlip {
+  width: calc(100% - 20px);
+  height: 60vh;
+  margin: 0 auto;
+  background-color: #f5f3f0;
+  padding: 0 1.5vw;
+}
+
+div.lab section .imgViewRgh .txtFlip span {
+  position: relative;
+}
+
+div.lab section .imgViewRgh .txtFlip h5 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 4vh;
+  color: #000;
+  text-align: center;
+}
+
+div.lab section .imgViewRgh .txtFlip h3 {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 28vh;
+  color: #000;
+  text-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+  vertical-align: top;
+}
+
+div.lab section .imgViewRgh .txtFlip h3:last-of-type {
+  text-align: right;
+}
+
+div.lab section .imgViewRgh .imgViewBot {
+  width: 100%;
+}
+
+div.lab section .imgViewRgh .imgViewBot .imgGroup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.lab section .imgViewRgh .imgViewBot .imgGroup .sc {
+  width: calc(100% / 4 - 20px);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+div.lab section .imgViewRgh .imgViewBot .imgGroup .image {
+  height: 10vh;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: scale 0.5s;
+  transition: scale 0.5s;
+}
+
+div.lab .i1 {
+  background-image: url("../img/sub4_WhyBens/lab_1.jpg");
+}
+
+div.lab .i2 {
+  background-image: url("../img/sub4_WhyBens/lab_2.jpg");
+}
+
+div.lab .i3 {
+  background-image: url("../img/sub4_WhyBens/lab_3.jpg");
+}
+
+div.lab .i4 {
+  background-image: url("../img/sub4_WhyBens/lab_4.jpg");
+}
+
+div.history {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #054d43), color-stop(50.1%, #054d43));
+  background: linear-gradient(0deg, #054d43 50%, #054d43 50.1%);
+  background-position: 0 0;
+  background-size: 100% 140px;
+  background-repeat: no-repeat;
+}
+
+div.history section article {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.history section article .bg {
+  position: relative;
+  z-index: -1;
+}
+
+div.history section article .image {
+  width: 40%;
+  height: 70vh;
+  position: fixed;
+  top: 140px;
+  z-index: 1;
+}
+
+div.history section article .i2 {
+  opacity: 0;
+}
+
+div.history section article .i3 {
+  opacity: 0;
+}
+
+div.history section article .txtGroup {
+  width: calc(50% - 20px);
+  background-color: #f5f3f0;
+}
+
+div.history section article .txtGroup .texts {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+}
+
+div.history section article .txtGroup .texts h5 {
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+div.history section article .txtGroup .texts ul {
+  padding: 0 1.5vw;
+}
+
+div.history section article .txtGroup .texts ul li {
+  list-style: circle;
+  margin-top: 20px;
+}
+
+div.history .i1 {
+  background-image: url("../img/sub4_WhyBens/designer_1.jpg");
+}
+
+div.history .i2 {
+  background-image: url("../img/sub4_WhyBens/designer_2.jpg");
+}
+
+div.history .i3 {
+  background-image: url("../img/sub4_WhyBens/designer_3.jpg");
+}
+
+div.history .i4 {
+  background-image: url("../img/sub4_WhyBens/designer_4.jpg");
+}
+
+@media (min-width: 421px) {
+  div.mission section .imgViewRgh .btns:hover {
+    height: 41px;
+  }
+  div.mission section .imgViewRgh .btns:hover button {
+    width: 41px;
+  }
+  div.mission section .imgViewRgh .btns:hover button i {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 41px;
+    color: #fff;
+  }
+  div.lab section .imgViewBot .sc:hover .image {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (max-width: 420px) {
+  div.content {
+    padding-top: 0;
+    margin-top: 40px;
+  }
+  div.content section h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: inherit;
+  }
+  div.content section h6 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: inherit;
+  }
+  div.about,
+  div.mission,
+  div.vision {
+    background: none;
+  }
+  div.about header,
+  div.mission header,
+  div.vision header {
+    text-align-last: left;
+  }
+  div.mission section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  div.mission section .imgViewLft {
+    display: none;
+  }
+  div.mission section .imgViewRgh {
+    width: 100%;
+  }
+  div.mission section .imgViewRgh .txtFlip {
+    height: 130px;
+    padding: 0;
+  }
+  div.mission section .imgViewRgh .txtFlip .h5View {
+    height: 20px;
+  }
+  div.mission section .imgViewRgh .txtFlip .h5View .hGroup h5 {
+    height: 20px;
+  }
+  div.mission section .imgViewRgh .txtFlip .h6View {
+    height: 80px;
+    margin-top: 10px;
+  }
+  div.mission section .imgViewRgh .txtFlip .h6View .hGroup h6 {
+    height: 80px;
+  }
+  div.mission section .imgViewRgh .imgViewBot {
+    height: 250px;
+  }
+  div.mission section .imgViewRgh .imgViewBot .imgGroup {
+    height: calc(250px * 3);
+  }
+}

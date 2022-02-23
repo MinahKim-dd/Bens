@@ -1,0 +1,241 @@
+@import 'mixin.scss';
+
+div.mnWrap {
+    background-image: url('../img/sub1_Product/main.jpg');
+}
+
+div.title{
+    header{
+        text-align: center;
+    }
+    section{
+        .artGroup{
+            flex-wrap: wrap;
+        }
+        article {
+            width: calc(100% / 6 - 20px);
+            .texts{
+                margin-top: 0;
+                h6{
+                    font-weight: 300;
+                }
+            }
+        }    
+    }
+    @for $n from 1 to 7 {
+        .i#{$n} {
+            background-image: url(../img/sub1_Product/title_#{$n}.jpg);
+        }
+    }
+}
+
+div.cabinet {
+    section {
+        article {
+            width: calc(50% - 20px);
+
+            .tW1 {
+                margin-left: 22%;
+                margin-top: 7%;
+            }
+
+            .tW2 {
+                margin-left: 15%;
+                margin-top: 49%;
+            }
+
+            .tW3 {
+                margin-left: 12%;
+                margin-top: 45%;
+            }
+
+            .tW4 {
+                margin-left: 33%;
+                margin-top: 87%;
+            }
+        }
+    }
+    @for $n from 1 to 3 {
+        .i#{$n} {
+            background-image: url('../img/sub1_Product/cabinet_#{$n}.jpg');
+        }
+    }
+}
+
+div.closet{
+    section{
+        .artGroup{
+            flex-wrap: wrap;
+            row-gap: 40px;
+        }
+    
+        article {
+            width: calc(100% / 3 - 20px);
+        }    
+    }
+    @for $n from 1 to 7 {
+        .i#{$n}{
+            background-image: url('../img/sub1_Product/closet_#{$n}.jpg');
+        }
+    }
+}
+
+div.storage{
+    section{
+        article {
+            width: calc(100% - 20px);
+            margin: 0 auto;
+            .tW1 {
+                margin-left: 47%;
+                margin-top: 8%;
+            }
+            .tW2 {
+                flex-direction: row;
+                margin-left: 14%;
+                margin-top: 22%;
+            }
+            .tW3 {
+                flex-direction: column;
+                margin-left: 30%;
+                margin-top: 35%;
+                .texts{
+                    margin: 0;
+                    margin-top: 10px;
+                }
+            }
+            .tW4 {
+                flex-direction: row;
+                align-items: flex-end;
+                margin-left: 42%;
+                margin-top: 50%;
+            }
+        }
+    }
+    @for $n from 1 to 2 {
+        .i#{$n}{
+            background-image: url('../img/sub1_Product/storage_#{$n}.jpg');
+        }
+    }
+}
+
+div.sofaBed{
+    section{
+        .artGroup{
+            width: calc(100% / 3 * 5);
+        }
+        article{
+            width: calc(100% / 5 - 20px);
+        }
+    }
+    @for $n from 1 to 11 {
+        .i#{$n}{
+            background-image: url('../img/sub1_Product/sofaBed_#{$n}.jpg');
+        }
+    }
+}
+
+@media (min-width:421px) {
+    .title {
+        section {
+            article:hover {
+                h6 {
+                    font-weight: 700;
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    div.title{
+        header{
+            text-align: left;
+        }
+        .artGroup{
+            width: 200%;
+            flex-wrap: nowrap;
+        }
+    }
+    div.cabinet {
+    section {
+        .artGroup{
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+        article {
+            width: 100%;
+            .tW1 {
+                margin-left: 5%;
+            }
+
+            .tW2 {
+                margin-left: 0;
+            }
+
+            .tW3 {
+                margin-left: 0;
+            }
+
+            .tW4 {
+                margin-left: 15%;
+            }
+        }
+    }
+    }
+    div.closet{
+    section{
+        .artGroup{
+            flex-direction: row;
+            row-gap: 20px;
+        }
+        article {
+            width: 100%;
+
+            .texts{
+                .txtLeft{
+                    h5{
+                        span{
+                            font-size: 10px;
+                        }            
+                    }
+                }
+            }
+        }
+    }
+    }
+    div.storage{
+    section{
+        .artGroup{
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+        article {
+            width: 100%;
+            .tW1 {
+                margin-left: 10%;
+            }
+            .tW2 {
+                margin-left: 12%;
+            }
+            .tW3 {
+                margin-left: 30%;
+                margin-top: 35%;
+            }
+            .tW4 {
+                margin-top: 30%;
+            }
+        }
+    }
+    }
+    div.sofaBed{
+        section{
+            article{
+                width: calc(100% / 5 - 20px);
+            }
+        }
+    }
+}

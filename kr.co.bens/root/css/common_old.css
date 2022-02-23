@@ -1,0 +1,64 @@
+@import url('fonts.css');
+
+html, body{
+    /* 기준폰트의 크기는 10pt입니다.
+    px단위로 환산하면 12px입니다. */
+    /* font-size: 12px; */
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    color: #555;
+}
+h1, h2, h3, h4, h5, h6, li, button, input, label, option{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+div.content{
+    padding-bottom: 320px;
+}
+div.content header{
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+div.content header h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120px;
+    color: #000;
+    text-transform: uppercase;
+}
+div.content header p{
+    /* 수정범위가 커질수 있어 고정단위를 쓰겠습니다. */
+    /* font-size: 1.2rem; */
+}
+div.content section{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+div.content section h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000;
+}
+div.content section h5{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+    color: #333;
+}
+div.content section h6{}
+div.content section p{
+    overflow: hidden;
+}
+div.content section menu{}
+div.content section menu li{
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+}
